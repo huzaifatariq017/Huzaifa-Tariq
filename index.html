@@ -3,60 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Huzaifa Tariq - PHP Laravel Developer | Vehari</title>
+<title>Huzaifa Tariq - PHP Laravel Developer</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-body{background:#0f0f0f;color:#fff}
-header{background:#111;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto;position:sticky;top:0;z-index:100}
-.logo{font-size:24px;font-weight:900}.logo span{color:#00d4ff}
-header a{color:#fff;text-decoration:none;margin-left:14px;font-weight:600;font-size:14px}
-.hero{max-width:1100px;margin:auto;padding:55px 20px;text-align:center}
-.hero img{width:130px;height:130px;border-radius:50%;border:4px solid #00d4ff;object-fit:cover}
-.hero h1{font-size:42px;margin:14px 0 5px}.hero h1 span{color:#00d4ff}
-.hero p{color:#aaa;font-size:16px;line-height:1.6;max-width:620px;margin:10px auto}
-.hero button{background:#00d4ff;color:#111;border:none;padding:13px 28px;border-radius:25px;font-weight:bold;font-size:15px;cursor:pointer;margin:8px 5px}
-.hero button.outline{background:transparent;color:#fff;border:2px solid #00d4ff}
-.sec{max-width:1100px;margin:auto;padding:30px 20px}
-.sec h2{font-size:28px;margin-bottom:18px}.sec h2 span{color:#00d4ff}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
-.card{background:#1a1a1a;border-radius:18px;overflow:hidden;border:1px solid #222}
-.card img{width:100%;height:180px;object-fit:cover}
-.card-body{padding:18px}
-.card-body h3{font-size:20px}
-.card-body p{color:#aaa;font-size:14px;line-height:1.6;margin:8px 0}
-.tag{display:inline-block;background:#222;padding:5px 12px;border-radius:20px;font-size:12px;margin-right:5px}
-.card-body a{display:inline-block;margin-top:12px;background:#00d4ff;color:#111;padding:10px 20px;border-radius:20px;text-decoration:none;font-weight:bold;font-size:14px}
-.skills{display:flex;gap:10px;flex-wrap:wrap}
-.skills div{background:#1a1a1a;border:1px solid #222;padding:12px 18px;border-radius:20px;font-weight:bold;font-size:14px}
-.contact{background:#1a1a1a;border-radius:18px;padding:30px;text-align:center}
-.contact a{background:#25D366;color:#fff;padding:13px 28px;border-radius:25px;text-decoration:none;font-weight:bold;display:inline-block;margin-top:10px}
-footer{text-align:center;padding:25px;color:#777;font-size:13px}
-@media(max-width:600px){.hero h1{font-size:32px}}
+body{background:#0f172a;color:white}
+a{text-decoration:none;color:inherit}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;background:#0f172a;position:sticky;top:0;z-index:100;border-bottom:1px solid #1e293b}
+nav b{font-size:22px} nav b span{color:#22c55e}
+nav div a{margin-left:18px;font-size:14px;opacity:.8}
+.hero{text-align:center;padding:55px 20px 45px;background:linear-gradient(180deg,#1e293b,#0f172a)}
+.hero img{width:180px;height:180px;object-fit:cover;border-radius:50%;border:4px solid #22c55e;box-shadow:0 0 35px rgba(34,197,94,.6)}
+.hero h1{font-size:44px;margin-top:18px}
+.hero h1 span{color:#22c55e}
+.hero p{max-width:680px;margin:14px auto;color:#cbd5e1;line-height:1.7;font-size:16px}
+.btn{display:inline-block;background:#22c55e;color:#000;font-weight:bold;padding:13px 26px;border-radius:30px;margin:8px 5px;border:none;cursor:pointer;font-size:15px}
+.outline{background:transparent;color:white;border:2px solid #22c55e}
+.section{padding:45px 6%}
+.section h2{font-size:30px;margin-bottom:22px;text-align:center}
+.section h2 span{color:#22c55e}
+.skills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.skills span{background:#1e293b;padding:11px 20px;border-radius:20px;font-size:14px;border:1px solid #334155}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.card{background:#1e293b;border-radius:16px;overflow:hidden;border:1px solid #334155}
+.card img{width:100%;height:185px;object-fit:cover}
+.card div{padding:20px}
+.card h3{font-size:19px}
+.card p{font-size:14px;color:#94a3b8;margin:10px 0;line-height:1.6}
+.card a{color:#22c55e;font-weight:bold;font-size:14px}
+.about{background:#1e293b;margin:0 6%;border-radius:20px;padding:30px;text-align:center;line-height:1.7;color:#cbd5e1}
+.contact{text-align:center;background:#1e293b;margin:25px 6%;border-radius:20px;padding:38px 20px}
+footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
+@media(max-width:600px){.hero h1{font-size:32px} nav div{display:none}}
 </style>
 </head>
 <body>
-<header><div class="logo">HUZAIFA<span>.DEV</span></div><div><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></header>
+<nav><b>Huzaifa <span>Tariq</span></b><div><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
 
 <div class="hero">
-<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400">
+<img src="my-pic.jpg" alt="Huzaifa Tariq">
 <h1>Huzaifa <span>Tariq</span> 👋</h1>
 <p><b>PHP Laravel Developer from Vehari, Pakistan</b><br>I build modern, fast & responsive business websites & e-commerce stores. HTML, CSS, JavaScript, PHP, Laravel, Bootstrap.</p>
-<button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work 👇</button>
-<button class="outline" onclick="window.open('https://wa.me/923341765911','_blank')">WhatsApp Me 💬</button>
-<p style="margin-top:12px">⭐ 3+ Projects • 📍 Vehari • 📞 03341765911</p>
+<button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work 👇</button>
+<button class="btn outline" onclick="window.open('https://wa.me/923341765911','_blank')">WhatsApp Me 💬</button>
+<p style="margin-top:14px;color:#94a3b8">⭐ 3+ Projects • 📍 Vehari • 📞 03341765911 • Available for Work</p>
 </div>
 
-<div class="sec" id="projects"><h2>My <span>Projects</span> 🚀</h2><div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800"><div class="card-body"><h3>🛍️ Huzaifa Store</h3><p>Best Quality Products in Pakistan | Online Shopping | Cash On Delivery Available. Complete E-commerce Store.</p><div><span class="tag">HTML</span><span class="tag">JavaScript</span><span class="tag">E-commerce</span></div><a href="https://huzaifatariq017.github.io/huzaifa-store/" target="_blank">Live Demo ↗</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800"><div class="card-body"><h3>💎 Zar Jewellers - Vehari</h3><p>Online Jewelry Store | Bridal Sets, Rings, Necklaces & Earrings | Cash on Delivery All Pakistan.</p><div><span class="tag">HTML</span><span class="tag">Bootstrap</span><span class="tag">E-commerce</span></div><a href="https://huzaifatariq017.github.io/Zar-Jewellers/" target="_blank">Live Demo ↗</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"><div class="card-body"><h3>💪 Vehari Fitness Club</h3><p>Gym Website with BMI Calculator, Trainers, Membership Plans. WhatsApp Join System.</p><div><span class="tag">HTML</span><span class="tag">BMI Calculator</span><span class="tag">JavaScript</span></div><a href="https://huzaifatariq017.github.io/vehari-gym/" target="_blank">Live Demo ↗</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?w=800"><div class="card-body"><h3>🏍️ Vehari Bike Rider - Game</h3><p>Mobile Game! Bike chalao, cars se bacho, score banao. High Score save hota hai.</p><div><span class="tag">Game</span><span class="tag">JavaScript</span><span class="tag">Mobile</span></div><a href="https://huzaifatariq017.github.io/vehari-game/" target="_blank">Play Game ↗</a></div></div>
+<div class="section" id="about"><h2>About <span>Me</span></h2><div class="about"><p>Assalam-o-Alaikum! Mera naam <b style="color:white">Huzaifa Tariq</b> hai. Me Vehari se hun aur <b style="color:white">PHP Laravel Developer</b> hun. Mujhe chote businesses ke liye khoobsurat aur fast websites banana pasand hai - jese Dukan, Jewellers Shop, Gym, School ya koi bhi business.</p><p style="margin-top:10px">Mera maqsad simple hai: <b style="color:#22c55e">Sasti, Jaldi aur Behtreen Website.</b></p></div></div>
+
+<div class="section" id="skills"><h2>My <span>Skills</span></h2><div class="skills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span><span>Bootstrap</span><span>MySQL</span><span>GitHub</span><span>Responsive Design</span><span>WhatsApp Integration</span></div></div>
+
+<div class="section" id="projects"><h2>My <span>Projects</span></h2><div class="grid">
+<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"><div><h3>🛍️ Huzaifa Store</h3><p>Complete E-commerce store with Cart, Checkout & WhatsApp Order system.</p><a href="https://huzaifatariq017.github.io/Huzaifa-Store/" target="_blank">Live Demo →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600"><div><h3>💎 Zar Jewellers</h3><p>Luxury Jewellery website for Zar Jewellers, Vehari. Gold, Diamond & Artificial Jewellery showcase.</p><a href="https://huzaifatariq017.github.io/Zar-Jewellers/" target="_blank">Live Demo →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600"><div><h3>💪 FitLife Gym</h3><p>Gym website with Membership Plans, Trainers, Timings & Join Now WhatsApp system.</p><a href="https://huzaifatariq017.github.io/FitLife-Gym/" target="_blank">Live Demo →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600"><div><h3>🎮 Snake Game</h3><p>Fun Snake Game in HTML, CSS & JavaScript. Playable on Mobile & Desktop.</p><a href="https://huzaifatariq017.github.io/Huzaifa-Game/" target="_blank">Play Game →</a></div></div>
 </div></div>
 
-<div class="sec" id="skills"><h2>My <span>Skills</span> 🛠️</h2><div class="skills"><div>HTML5</div><div>CSS3</div><div>JavaScript</div><div>Bootstrap</div><div>PHP</div><div>Laravel</div><div>SQL</div><div>Web Development</div></div></div>
-
-<div class="sec" id="contact"><div class="contact"><h2>Kaam Karwana Hai? 🤝</h2><p>Apni dukaan, gym, jewellers ya kisi bhi business ki website banwani hai?</p><p>📍 Vehari, Punjab, Pakistan<br>📞 03341765911 • 📧 urbanmartvehari@gmail.com</p><a href="https://wa.me/923341765911?text=Assalam-o-Alaikum%20Huzaifa%20Mujhe%20Website%20Banwani%20Hai" target="_blank">WhatsApp Par Baat Karein 💬</a></div></div>
-
-<footer>© 2026 Huzaifa Tariq - Made with ❤️ in Vehari, Punjab</footer>
+<div class="contact" id="contact"><h2>Let's Work Together! 🚀</h2><p style="margin:12px 0;color:#cbd5e1">Apni Website Banwani Hai? Aaj Hi Rabta Karein.</p><button class="btn" onclick="window.open('https://wa.me/923341765911?text=Assalam-o-Alaikum Huzaifa! Mujhe website banwani hai','_blank')">WhatsApp: 03341765911</button><br><button class="btn outline" onclick="window.open('https://github.com/huzaifatariq017','_blank')">GitHub Profile</button><p style="margin-top:16px;font-size:14px;color:#94a3b8">📍 Vehari, Punjab, Pakistan • 📧 Available for Freelance Work</p></div>
+<footer>© 2026 Huzaifa Tariq - Made with ❤️ in Vehari</footer>
 </body>
 </html>
