@@ -6,11 +6,23 @@
 <title>Huzaifa Tariq - PHP Laravel Developer</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+html{scroll-behavior:smooth}
 body{background:#0f172a;color:white}
 a{text-decoration:none;color:inherit}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;background:#0f172a;position:sticky;top:0;z-index:100;border-bottom:1px solid #1e293b}
-nav b{font-size:22px} nav b span{color:#22c55e}
-nav div a{margin-left:18px;font-size:14px;opacity:.8}
+
+/* ===== STICKY NAVBAR - FINAL ===== */
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 6%;background:#0f172a;
+  position:sticky;position:-webkit-sticky;top:0;left:0;right:0;
+  z-index:9999;border-bottom:1px solid #1e293b;
+  box-shadow:0 4px 20px rgba(0,0,0,0.4);
+}
+nav b{font-size:22px;white-space:nowrap} nav b span{color:#22c55e}
+nav div{display:flex;align-items:center;gap:4px}
+nav div a{margin-left:14px;font-size:14px;opacity:.85;padding:6px 10px;border-radius:20px;transition:.2s}
+nav div a:hover{opacity:1;background:#1e293b;color:#22c55e}
+
 .hero{text-align:center;padding:55px 20px 45px;background:linear-gradient(180deg,#1e293b,#0f172a)}
 .hero img{width:180px;height:180px;object-fit:cover;border-radius:50%;border:4px solid #22c55e;box-shadow:0 0 35px rgba(34,197,94,.6)}
 .hero h1{font-size:44px;margin-top:18px}
@@ -18,7 +30,7 @@ nav div a{margin-left:18px;font-size:14px;opacity:.8}
 .hero p{max-width:680px;margin:14px auto;color:#cbd5e1;line-height:1.7;font-size:16px}
 .btn{display:inline-block;background:#22c55e;color:#000;font-weight:bold;padding:13px 26px;border-radius:30px;margin:8px 5px;border:none;cursor:pointer;font-size:15px}
 .outline{background:transparent;color:white;border:2px solid #22c55e}
-.section{padding:45px 6%}
+.section{padding:45px 6%;scroll-margin-top:80px}
 .section h2{font-size:30px;margin-bottom:22px;text-align:center}
 .section h2 span{color:#22c55e}
 .skills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
@@ -31,9 +43,15 @@ nav div a{margin-left:18px;font-size:14px;opacity:.8}
 .card p{font-size:14px;color:#94a3b8;margin:10px 0;line-height:1.6}
 .card a{color:#22c55e;font-weight:bold;font-size:14px}
 .about{background:#1e293b;margin:0 6%;border-radius:20px;padding:30px;text-align:center;line-height:1.7;color:#cbd5e1}
-.contact{text-align:center;background:#1e293b;margin:25px 6%;border-radius:20px;padding:38px 20px}
+.contact{text-align:center;background:#1e293b;margin:25px 6%;border-radius:20px;padding:38px 20px;scroll-margin-top:80px}
 footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
-@media(max-width:600px){.hero h1{font-size:32px} nav{flex-wrap:wrap;padding:10px} nav div{display:flex !important;flex-wrap:wrap;justify-content:center;gap:8px;width:100%} nav div a{font-size:13px;padding:6px 10px;background:#1e293b;border-radius:20px}}
+
+@media(max-width:650px){
+  .hero h1{font-size:32px}
+  nav{flex-direction:column;gap:10px;padding:12px 4%}
+  nav div{flex-wrap:wrap;justify-content:center;width:100%}
+  nav div a{font-size:13px;margin-left:0;padding:7px 12px;background:#1e293b}
+}
 </style>
 </head>
 <body>
@@ -47,6 +65,7 @@ footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
 <button class="btn outline" onclick="window.open('https://wa.me/923341765911','_blank')">WhatsApp Me 💬</button>
 <p style="margin-top:14px;color:#94a3b8">⭐ 3+ Projects • 📍 Vehari • 📞 03341765911 • Available for Work</p>
 </div>
+
 <div class="section" id="about">
 <h2>About <span>Me</span></h2>
 <div class="about">
@@ -60,20 +79,22 @@ footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
 <p><b>Frontend Developer Skills:</b> HTML5, CSS3, JavaScript, jQuery, Bootstrap, Tailwind CSS, Responsive Design, Figma to HTML<br><br><b>Backend Developer Skills:</b> PHP, Laravel, MySQL, REST APIs, AJAX, MVC Architecture, Authentication & Security<br><br><b>CMS & E-Commerce:</b> WordPress, Shopify, WooCommerce, Custom E-Commerce Stores<br><br><b>Tools & Others:</b> Git, GitHub, VS Code, API Integration, SEO Basics, Deployment, cPanel</p>
 </div>
 </div>
+
 <div class="section" id="projects">
 <h2>My <span>Projects</span></h2>
 <div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"><div><h3>🛍️ Huzaifa Store</h3><p>Complete E-commerce store with Cart, Checkout & WhatsApp Order system.</p><a href="https://huzaifatariq017.github.io/Huzaifa-Store/" target="_blank">Live Demo →</a></div></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600"><div><h3>🛍️ Huzaifa Store</h3><p>Complete E-commerce store with Cart, Checkout & WhatsApp Order system.</p><a href="https://huzaifatariq017.github.io/huzaifa-store/" target="_blank">Live Demo →</a></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600"><div><h3>💎 Zar Jewellers</h3><p>Luxury Jewellery website for Zar Jewellers, Vehari. Gold, Diamond & Artificial Jewellery showcase.</p><a href="https://huzaifatariq017.github.io/Zar-Jewellers/" target="_blank">Live Demo →</a></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600"><div><h3>💪 FitLife Gym</h3><p>Gym website with Membership Plans, Trainers, Timings & Join Now WhatsApp system.</p><a href="https://huzaifatariq017.github.io/FitLife-Gym/" target="_blank">Live Demo →</a></div></div>
 <div class="card"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600"><div><h3>🎮 Snake Game</h3><p>Fun Snake Game in HTML, CSS & JavaScript. Playable on Mobile & Desktop.</p><a href="https://huzaifatariq017.github.io/Huzaifa-Game/" target="_blank">Play Game →</a></div></div>
 </div>
 </div>
-  <div class="section" id="price">
+
+<div class="section" id="price">
 <h2>Website <span>Development Pricing</span></h2>
 <p style="color:#aaa;margin-bottom:22px;text-align:center">Professional Websites For Every Business. One-Time Payment. No Monthly Fees.</p>
 <div class="grid">
-<div class="card"><div class="card-body">
+<div class="card"><div style="padding:20px">
 <p style="color:#aaa;font-size:13px">LANDING PAGE</p>
 <h3 style="font-size:28px;margin:8px 0">Starter</h3>
 <p><span style="color:#aaa;font-size:13px">Starting From</span><br><span style="font-size:32px;font-weight:900">Rs. 4,999</span></p>
@@ -81,7 +102,7 @@ footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
 <p style="line-height:2;font-size:14px">✓ 1 Page Modern Website<br>✓ Business Info + Gallery + Location<br>✓ WhatsApp, Call & Maps Button<br>✓ Mobile & SEO Friendly<br>✓ Delivery: 2 Days</p>
 <a href="https://wa.me/923341765911?text=Assalam-o-Alaikum%20Huzaifa%2C%20I%20am%20interested%20in%20your%20Starter%20Plan%20%28Rs.%204%2C999%29%20for%20a%20Landing%20Page%20Website.%20Please%20share%20the%20process%20and%20timeline.%20Thank%20you.">Get a Quote ↗</a>
 </div></div>
-<div class="card" style="border:2px solid #00d4ff"><div class="card-body">
+<div class="card" style="border:2px solid #00d4ff"><div style="padding:20px">
 <p style="background:#00d4ff;color:#111;display:inline-block;padding:5px 12px;border-radius:20px;font-size:12px;font-weight:bold">BEST VALUE • 80% CLIENTS CHOOSE THIS</p>
 <p style="color:#aaa;font-size:13px;margin-top:10px">BUSINESS WEBSITE</p>
 <h3 style="font-size:28px;margin:8px 0">Growth</h3>
@@ -90,7 +111,7 @@ footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
 <p style="line-height:2;font-size:14px">✓ Up to 5 Pages Complete Website<br>✓ Products / Menu / Price List<br>✓ Inquiry Form + Google Maps<br>✓ Google Business Profile Setup<br>✓ 30 Days Free Support | Delivery: 4 Days</p>
 <a href="https://wa.me/923341765911?text=Assalam-o-Alaikum%20Huzaifa%2C%20I%20am%20interested%20in%20your%20Growth%20Plan%20%28Rs.%209%2C999%29%20for%20a%20Business%20Website.%20Please%20share%20details%20and%20available%20slots.%20Thank%20you.">Get a Quote ↗</a>
 </div></div>
-<div class="card"><div class="card-body">
+<div class="card"><div style="padding:20px">
 <p style="color:#aaa;font-size:13px">ONLINE STORE</p>
 <h3 style="font-size:28px;margin:8px 0">Commerce</h3>
 <p><span style="color:#aaa;font-size:13px">Starting From</span><br><span style="font-size:32px;font-weight:900">Rs. 14,999</span></p>
@@ -103,6 +124,7 @@ footer{text-align:center;padding:22px;color:#64748b;font-size:13px}
 </div>
 
 <div class="contact" id="contact"><h2>Let's Work Together! 🚀</h2><p style="margin:12px 0;color:#cbd5e1">Apni Website Banwani Hai? Aaj Hi Rabta Karein.</p><button class="btn" onclick="window.open('https://wa.me/923341765911?text=Assalam-o-Alaikum%20Huzaifa!%20Mujhe%20website%20banwani%20hai','_blank')">WhatsApp: 03341765911</button><br><button class="btn outline" onclick="window.open('https://github.com/huzaifatariq017','_blank')">GitHub Profile</button><p style="margin-top:16px;font-size:14px;color:#94a3b8">📍 Vehari, Punjab, Pakistan • 📧 Available for Freelance Work</p></div>
+
 <footer style="background:#020617;border-top:1px solid #1e293b;padding:45px 6% 20px">
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;max-width:1000px;margin:0 auto;text-align:left">
     <div>
